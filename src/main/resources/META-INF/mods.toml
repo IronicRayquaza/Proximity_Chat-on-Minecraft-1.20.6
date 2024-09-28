@@ -1,0 +1,8 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="MIT"
+[[mods]]
+modId="proximitychat"
+version="1.0"
+displayName="Proximity Chat Mod"
+description="A mod that allows players to chat with each other when they are close to each other."

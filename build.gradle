@@ -1,0 +1,29 @@
+plugins {
+    id 'net.minecraftforge.gradle' version '1.20.6-50.1.9' // Adjust based on your Forge MDK version
+}
+
+group = 'com.yourname.proximitychat'   // Your mod's group (namespace)
+version = '1.0'                        // Version of your mod
+archivesBaseName = 'proximitychat'      // Name of your mod
+
+minecraft {
+    version = "1.20.6"  // Minecraft version (adjust as per your target)
+    mappings channel: 'snapshot', version: '20210309-1.20.6'
+    runs {
+        client {
+            workingDirectory project.file('run')
+        }
+        server {
+            workingDirectory project.file('run')
+        }
+    }
+}
+
+repositories {
+    // Maven repository for MumbleLink (if using an external API)
+    maven { url 'https://repo.maven.apache.org/maven2/' }
+}
+
+dependencies {
+    minecraft 'net.minecraftforge:forge:1.20.6' // Adjust based on the Forge version you're using
+}
